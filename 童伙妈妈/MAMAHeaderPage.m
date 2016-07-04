@@ -25,6 +25,7 @@
     self = [super init];
     if (self) {
         self.frame = CGRectMake(SCREEN_W, 0, SCREEN_W, 20);
+        self.backgroundColor = [UIColor whiteColor];
         [self addSubview:self.segmentedControl];
     }
     return self;

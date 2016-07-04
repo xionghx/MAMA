@@ -14,6 +14,7 @@
 #import "AFNetworking.h"
 #import "APIConfig.h"
 #import "NetRequest.h"
+#import "MainPageScrollView.h"
 
 @interface MainPage ()
 @property(nonatomic,strong)UIButton *aButton;
@@ -26,6 +27,7 @@
 {
     self = [super init];
     if (self) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
             }
     return self;
 }
@@ -40,6 +42,7 @@
 //    [self.view addSubview:self.aButton];
     [self.view addSubview:self.scrollView];
 //    [Controllers buttonAtRect:CGRectMake(200, 200, 50, 50) withTitle:@"asd" andTaget:self andAction:@selector(butt)];
+//    [self.view addSubview:[[MainPageScrollView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_W, 603) ]];
     [((XNavigationController *)self.navigationController).segmentedControl addTarget:self action:@selector(segmentedControlValueChanged) forControlEvents:UIControlEventValueChanged];
 
 }
@@ -100,12 +103,12 @@
 -(UIScrollView *)scrollView
 {
     if (_scrollView == nil) {
-        _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 36, SCREEN_W, 600)];
-        _scrollView.contentSize = CGSizeMake(2*SCREEN_W, 0);
-        _scrollView.backgroundColor = [UIColor redColor];
-        _scrollView.pagingEnabled = YES;
-        [_scrollView addSubview:self.aButton];
-        [_scrollView addSubview:[[MAMAHeaderPage alloc]init]];
+        _scrollView = [[MainPageScrollView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_W, 603)];
+//        _scrollView.contentSize = CGSizeMake(2*SCREEN_W, 0);
+//        _scrollView.backgroundColor = [UIColor redColor];
+//        _scrollView.pagingEnabled = YES;
+//        [_scrollView addSubview:self.aButton];
+//        [_scrollView addSubview:[[MAMAHeaderPage alloc]init]];
     }
     return _scrollView;
 }
