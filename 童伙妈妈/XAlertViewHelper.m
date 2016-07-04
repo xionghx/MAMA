@@ -23,6 +23,43 @@
 
 @implementation XAlertViewHelper
 
++(void)showAlerViewWithTitle:(NSString *)title AndMessage:(NSString *)message
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title? title:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alertController addAction:sureAction];
+    [[XAlertViewHelper presentVC] presentViewController:alertController animated:YES completion:nil];
+
+}
+
++(void)showAlerViewWithTitle:(NSString *)title
+                  AndMessage:(NSString *)message
+           AndActionMessages:(NSArray *)actionMessage
+            AndButtonActionS:(NSString * (^)(NSString * )) block
+{
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title? title:@"提示" message:message preferredStyle:UIAlertControllerStyleAlert];
+    for (NSString * aActionMessage in actionMessage) {
+//        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:aActionMessage style:UIAlertActionStyleDefault handler:block(@"")];
+        UIAlertAction *sureAction = [UIAlertAction actionWithTitle:aActionMessage style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            
+//            NSString * a = block(@"");
+        }];
+        [alertController addAction:sureAction];
+    }
+    
+}
++(UIViewController *)presentVC
+{
+    UIViewController *rootVC = [[UIApplication sharedApplication] keyWindow].rootViewController;
+    UIViewController *presentVC = rootVC;
+    
+    while (presentVC.presentedViewController) {
+        presentVC = presentVC.presentedViewController;
+    }
+    return presentVC;
+
+}
+
 +(void)showAlertViewWithMessage:(NSString * _Nonnull)message target:(id _Nonnull)target block:(XAlertViewHelperFinishBlock _Nonnull)block{
  //    aHelper.finishBlock = block;
 //    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"取消" otherButtonTitles:@"确定", nil];

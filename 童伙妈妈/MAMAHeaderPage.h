@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MAMAHeaderPage.h
 //  童伙妈妈
 //
 //  Created by xionghuanxin on 7/4/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MAMAHeaderPage : UIView
 
 @end
-

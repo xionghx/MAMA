@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XNavigationController : UINavigationController
+@property(nonatomic,strong)UISegmentedControl *segmentedControl;
 
 @end

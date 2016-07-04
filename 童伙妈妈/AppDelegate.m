@@ -18,11 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.tintColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     MainPage *aPage = [[MainPage alloc]init];
     XNavigationController * new = [[XNavigationController alloc]initWithRootViewController:aPage];
     self.window.rootViewController = new;
-    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//    [UIApplication sharedApplication].
+
     
     
     return YES;

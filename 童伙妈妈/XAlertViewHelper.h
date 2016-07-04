@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
 typedef void(^XAlertViewHelperFinishBlock)(NSString * _Nonnull text);
 
 
 
 @interface XAlertViewHelper : NSObject
++(void)showAlerViewWithTitle:(NSString *)title AndMessage:(NSString *)message;
++(void)showAlerViewWithTitle:(NSString *)title
+                  AndMessage:(NSString *)message
+           AndActionMessages:(NSArray *)actionMessage
+            AndButtonActionS:(NSString * (^)(NSString * )) block;
 
 +(void)showAlertViewWithMessage:(NSString * _Nonnull)message target:(id _Nonnull)target block:(XAlertViewHelperFinishBlock _Nonnull)block;
 //- (void)showInputAlertViewWithMessage:(NSString *)message block:(XAlertViewHelperFinishBlock)block;
@@ -24,3 +28,5 @@ typedef void(^XAlertViewHelperFinishBlock)(NSString * _Nonnull text);
 
 
 @end
+
+
