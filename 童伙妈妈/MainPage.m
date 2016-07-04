@@ -137,22 +137,21 @@
 
     NSDictionary *parameters = @{
                                  @"m": @"article",
-                                 @"a":@"getArticleCateList",
+                                 @"a":@"getArticleList",
                                  @"channelId":@"1000001",
                                  };
 
     
-//    [manager POST:POST_URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        
-//        NSLog(@"POST:%@",responseObject);
-//        
-//    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        
-//        NSLog(@"POST:%@",error.localizedDescription);
-//        
-//        
-//    }];/Users/xionghx/GitHub/童伙妈妈/童伙妈妈/MainPage.m:106:14: No visible @interface for 'AFHTTPSessionManager' declares the selector 'POST:::progress:success:failure:'
-
+    [manager POST:POST_URL parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        NSLog(@"POST:%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        NSLog(@"POST:%@",error.localizedDescription);
+        
+        
+    }];
 }
 
 -(void)segmentedControlValueChanged
