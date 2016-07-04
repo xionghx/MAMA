@@ -1,21 +1,23 @@
 //
-//  ViewController.m
+//  MainPage.m
 //  童伙妈妈
 //
 //  Created by xionghuanxin on 7/4/16.
 //  Copyright © 2016 xionghuanxin. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MainPage.h"
 
-@interface ViewController ()
+@interface MainPage ()
 
 @end
 
-@implementation ViewController
+@implementation MainPage
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+    NSLog( @"%@",self.navigationController);
 }
 
 

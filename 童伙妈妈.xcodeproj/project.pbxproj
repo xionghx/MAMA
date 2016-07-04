@@ -14,6 +14,13 @@
 		03012D291D29EF27003C4924 /* ____.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03012D271D29EF27003C4924 /* ____.xcdatamodeld */; };
 		03012D2B1D29EF27003C4924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03012D2A1D29EF27003C4924 /* Assets.xcassets */; };
 		03012D2E1D29EF27003C4924 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03012D2C1D29EF27003C4924 /* LaunchScreen.storyboard */; };
+		03C33E831D29FF5E00955737 /* XTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E821D29FF5E00955737 /* XTabBar.m */; };
+		03C33E861D29FF9400955737 /* XNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E851D29FF9400955737 /* XNavigationController.m */; };
+		03C33E891D29FFF700955737 /* UIBarButtonItem+CustomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E881D29FFF700955737 /* UIBarButtonItem+CustomItem.m */; };
+		03C33E901D2A00E600955737 /* NSObject+FileWithBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E8D1D2A00E600955737 /* NSObject+FileWithBundle.m */; };
+		03C33E911D2A00E600955737 /* UIView+SetSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E8F1D2A00E600955737 /* UIView+SetSize.m */; };
+		03C33E941D2A06D300955737 /* MainPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E931D2A06D300955737 /* MainPage.m */; };
+		03C33E971D2A095900955737 /* XAlertViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C33E961D2A095900955737 /* XAlertViewHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,23 @@
 		03012D2A1D29EF27003C4924 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03012D2D1D29EF27003C4924 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03012D2F1D29EF27003C4924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03C33E7E1D29FCDA00955737 /* XAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAlertViewHelper.h; sourceTree = "<group>"; };
+		03C33E7F1D29FCDA00955737 /* XAlertViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAlertViewHelper.m; sourceTree = "<group>"; };
+		03C33E811D29FF5E00955737 /* XTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTabBar.h; sourceTree = "<group>"; };
+		03C33E821D29FF5E00955737 /* XTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTabBar.m; sourceTree = "<group>"; };
+		03C33E841D29FF9400955737 /* XNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XNavigationController.h; sourceTree = "<group>"; };
+		03C33E851D29FF9400955737 /* XNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XNavigationController.m; sourceTree = "<group>"; };
+		03C33E871D29FFF700955737 /* UIBarButtonItem+CustomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CustomItem.h"; sourceTree = "<group>"; };
+		03C33E881D29FFF700955737 /* UIBarButtonItem+CustomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CustomItem.m"; sourceTree = "<group>"; };
+		03C33E8B1D2A006100955737 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		03C33E8C1D2A00E600955737 /* NSObject+FileWithBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+FileWithBundle.h"; sourceTree = "<group>"; };
+		03C33E8D1D2A00E600955737 /* NSObject+FileWithBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+FileWithBundle.m"; sourceTree = "<group>"; };
+		03C33E8E1D2A00E600955737 /* UIView+SetSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetSize.h"; sourceTree = "<group>"; };
+		03C33E8F1D2A00E600955737 /* UIView+SetSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetSize.m"; sourceTree = "<group>"; };
+		03C33E921D2A06D300955737 /* MainPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainPage.h; sourceTree = "<group>"; };
+		03C33E931D2A06D300955737 /* MainPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainPage.m; sourceTree = "<group>"; };
+		03C33E951D2A095800955737 /* XAlertViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XAlertViewHelper.h; sourceTree = "<group>"; };
+		03C33E961D2A095900955737 /* XAlertViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XAlertViewHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +84,23 @@
 		03012D1A1D29EF27003C4924 /* 童伙妈妈 */ = {
 			isa = PBXGroup;
 			children = (
+				03C33E951D2A095800955737 /* XAlertViewHelper.h */,
+				03C33E961D2A095900955737 /* XAlertViewHelper.m */,
+				03C33E8B1D2A006100955737 /* PrefixHeader.pch */,
+				03C33E811D29FF5E00955737 /* XTabBar.h */,
+				03C33E821D29FF5E00955737 /* XTabBar.m */,
+				03C33E8C1D2A00E600955737 /* NSObject+FileWithBundle.h */,
+				03C33E8D1D2A00E600955737 /* NSObject+FileWithBundle.m */,
+				03C33E8E1D2A00E600955737 /* UIView+SetSize.h */,
+				03C33E8F1D2A00E600955737 /* UIView+SetSize.m */,
+				03C33E871D29FFF700955737 /* UIBarButtonItem+CustomItem.h */,
+				03C33E881D29FFF700955737 /* UIBarButtonItem+CustomItem.m */,
+				03C33E841D29FF9400955737 /* XNavigationController.h */,
+				03C33E851D29FF9400955737 /* XNavigationController.m */,
+				03C33E921D2A06D300955737 /* MainPage.h */,
+				03C33E931D2A06D300955737 /* MainPage.m */,
+				03C33E7E1D29FCDA00955737 /* XAlertViewHelper.h */,
+				03C33E7F1D29FCDA00955737 /* XAlertViewHelper.m */,
 				03012D1E1D29EF27003C4924 /* AppDelegate.h */,
 				03012D1F1D29EF27003C4924 /* AppDelegate.m */,
 				03012D211D29EF27003C4924 /* ViewController.h */,
@@ -108,7 +149,7 @@
 		03012D101D29EF27003C4924 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = xionghuanxin;
 				TargetAttributes = {
 					03012D171D29EF27003C4924 = {
@@ -153,10 +194,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03C33E971D2A095900955737 /* XAlertViewHelper.m in Sources */,
+				03C33E901D2A00E600955737 /* NSObject+FileWithBundle.m in Sources */,
+				03C33E861D29FF9400955737 /* XNavigationController.m in Sources */,
 				03012D231D29EF27003C4924 /* ViewController.m in Sources */,
+				03C33E891D29FFF700955737 /* UIBarButtonItem+CustomItem.m in Sources */,
 				03012D291D29EF27003C4924 /* ____.xcdatamodeld in Sources */,
 				03012D201D29EF27003C4924 /* AppDelegate.m in Sources */,
+				03C33E911D2A00E600955737 /* UIView+SetSize.m in Sources */,
 				03012D1D1D29EF27003C4924 /* main.m in Sources */,
+				03C33E941D2A06D300955737 /* MainPage.m in Sources */,
+				03C33E831D29FF5E00955737 /* XTabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/xionghx/GitHub/童伙妈妈/PrefixHeader.pch";
 				INFOPLIST_FILE = "童伙妈妈/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xhx.----";
@@ -277,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "/Users/xionghx/GitHub/童伙妈妈/PrefixHeader.pch";
 				INFOPLIST_FILE = "童伙妈妈/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xhx.----";
@@ -303,6 +353,7 @@
 				03012D341D29EF27003C4924 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
